@@ -1,5 +1,5 @@
 push:
-	pip freeze > requirements.txt
+	pip freeze -l > requirements.txt
 	git add .
 	git commit -m "updates"
 	git push
