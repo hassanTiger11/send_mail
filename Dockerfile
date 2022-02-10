@@ -16,7 +16,7 @@ ENV FLASK_APP=server.py
 ENV FLASK_ENV=development
 ENV FLASK_RUN_HOST=0.0.0.0
 
-
+ENV PORT 5000
 EXPOSE 5000
 CMD ["flask", "run"]
 
