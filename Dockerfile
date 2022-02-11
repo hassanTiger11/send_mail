@@ -17,7 +17,6 @@ RUN echo "password = ${PASS}" | tee -a mail.ini
 ENV FLASK_APP=server.py
 ENV FLASK_ENV=development
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV PORT 5000
-EXPOSE 5000
-CMD ["flask", "run"]
 
+EXPOSE ${PORT}
+CMD gunicorn app:server --bind 0.0.0.0:$PORT --preload
