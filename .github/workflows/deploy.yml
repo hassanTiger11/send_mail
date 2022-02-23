@@ -46,7 +46,7 @@ jobs:
 
           # (Optional, default: "")
           # Additional options of docker build command.
-          docker_options: "--build-arg EMAIL=${{ secrets.HEROKU_EMAIL }} --build-arg PASS=${{ secrets.DOCKER_PASS }}"
+          docker_options: "--build-arg EMAIL=${{ secrets.EMAIL }} --build-arg PASS=${{ secrets.PASS }}"
 
           # (Optional, default: "web")
           # Select the process type for which you want the docker container to be uploaded.
