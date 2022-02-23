@@ -15,4 +15,4 @@ test:
 	curl -X POST http://127.0.0.1:5000/send_email -H 'Content-Type: application/json' -d '{"receiver_email":"halnamer@email.arizona.edu","subject": "test", "body": "test"}'
 
 send:
-	curl -X POST https://tiger-email.herokuapp.com:5000/send_email -H 'Content-Type: application/json' -d '{"receiver_email":"halnamer@email.arizona.edu","subject": "test", "body": "test"}'
+	curl -X POST https://tiger-email.herokuapp.com:31607/send_email -H 'Content-Type: application/json' -d '{"receiver_email":"halnamer@email.arizona.edu","subject": "test", "body": "test"}'
