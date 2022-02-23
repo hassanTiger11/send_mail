@@ -19,4 +19,5 @@ ENV FLASK_ENV=development
 ENV FLASK_RUN_HOST=0.0.0.0
 
 EXPOSE ${PORT}
+RUN echo ${PORT}
 CMD gunicorn app:app --bind 0.0.0.0:$PORT --preload
