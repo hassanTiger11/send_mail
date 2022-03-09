@@ -2,14 +2,14 @@ from crypt import methods
 from flask import Flask, jsonify, request
 from mail import send_email
 import os
-from wsgi import port
+
 
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
 def hello_world():
     print('hello')
-    return "<p>Port: </p>"+port
+    return "<p>Port: </p>"
 
 @app.route("/send_email", methods=["POST"])
 def send_mail():
