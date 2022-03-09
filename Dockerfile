@@ -19,7 +19,7 @@ ENV FLASK_ENV=development
 ENV FLASK_RUN_HOST=0.0.0.0
 
 EXPOSE ${PORT}
-RUN echo ${PORT}
+RUN echo "Port: ${PORT}"
 EXPOSE 25
 EXPOSE 5000
 RUN echo ${PORT}
