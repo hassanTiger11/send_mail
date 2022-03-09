@@ -31,7 +31,7 @@ def send_mail():
     else:
         return f'missing args\n'
 
-@app.route('/hello', ['GET'])
+@app.route('/hello', methods=['GET'])
 def hello():
     return 'hello from the otherside'
 
