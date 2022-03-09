@@ -1,6 +1,6 @@
 from crypt import methods
 from flask import Flask, jsonify, request
-from mail import send_email
+from app.mail import send_email
 import os
 
 app = Flask(__name__)
